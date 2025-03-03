@@ -53,7 +53,7 @@ Si deseas contribuir o modificar el código, sigue estos pasos:
 ```sh
 git clone https://github.com/MaxiFranco05/gamesExplorer.git
 cd gamesExplorer
-pip install -r requirements.txt  # Si hay un archivo de dependencias
+pip install -r requirements.txt
 ```
 
 Ejecuta las pruebas con:
