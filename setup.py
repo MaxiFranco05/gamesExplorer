@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='gamesExplorer',
-    version='0.1:Alpha',
+    version='0.0.1',
     description='Paquete para explorar juegos',
     author='Maxi',
     author_email='maxifranco666@ejemplo.com',
