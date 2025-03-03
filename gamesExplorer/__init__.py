@@ -1,0 +1,1 @@
+from gamesExplorer.manager import GamesManager
