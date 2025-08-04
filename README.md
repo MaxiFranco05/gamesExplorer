@@ -1,71 +1,79 @@
-# 🎉 Challenge Amigo Invisible
-📌 Breve descripción del proyecto: Este proyecto es una aplicación para jugar al amigo invisible de forma online. Sirve para generar parejas de amigos de manera aleatoria y asegurar que cada persona reciba un regalo sin saber quién es su "amigo invisible".
+# 🎮 Games Explorer
+📌 Breve descripción del proyecto: Games Explorer es una aplicación web diseñada para explorar y descubrir nuevos juegos de diferentes plataformas. Permite a los usuarios buscar, filtrar y obtener información detallada sobre juegos, incluyendo descripciones, imagenes, y enlaces a tiendas en línea.
 
 ## ✨ Funcionalidades destacadas
-* Generación de parejas de amigos de manera aleatoria
-* Asignación de un "amigo invisible" a cada persona
-* Posibilidad de establecer un presupuesto para los regalos
-* Notificación a cada persona de su "amigo invisible" y del presupuesto establecido
+* Búsqueda de juegos por título, género o plataforma
+* Filtrado de resultados por popularidad, fecha de lanzamiento o calificación
+* Información detallada sobre cada juego, incluyendo:
+ + Descripciones y sinopsis
+ + Imágenes y trailers
+ + Enlaces a tiendas en línea para comprar o descargar el juego
+* Posibilidad de agregar juegos a una lista de favoritos para acceder rápidamente
 
 ## 🛠️ Tecnologías utilizadas
 ### Frontend
-* HTML
-* CSS
-* JavaScript
+* **HTML5**: Estructura y contenido de la página web
+* **CSS3**: Estilos y diseño visual
+* **JavaScript**: Funcionalidad interactiva y lógica de la aplicación
+* **React**: Biblioteca para construir interfaces de usuario
 ### Backend
-* Node.js
-* Express.js
-* MongoDB
+* **Node.js**: Entorno de ejecución para JavaScript en el servidor
+* **Express**: Framework para crear aplicaciones web
+* **MongoDB**: Base de datos NoSQL para almacenar información de juegos
 ### Herramientas
-* GitHub para el control de versiones
-* Heroku para el despliegue
+* **GitHub**: Control de versiones y colaboración
+* **npm**: Gestor de paquetes para Node.js
 
 ## 📁 Estructura del proyecto
 ```markdown
-ChallengeAmigoInvisible-ONE/
-│
-├── app.js
-├── controllers/
-│   ├── usuarioController.js
-│   └── amigoInvisibleController.js
-├── models/
-│   ├── usuario.js
-│   └── amigoInvisible.js
-├── public/
-│   ├── index.html
-│   └── estilo.css
-├── routes/
-│   ├── usuarioRoutes.js
-│   └── amigoInvisibleRoutes.js
-├── package.json
-└── README.md
+gamesExplorer/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── containers/
+│   │   ├── actions/
+│   │   ├── reducers/
+│   │   ├── index.js
+│   ├── package.json
+├── server/
+│   ├── app.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── package.json
+├── README.md
+├── LICENSE
 ```
 
 ## 🚀 Guía de instalación paso a paso
-1. Clonar el repositorio con `git clone https://github.com/MaxiFranco05/ChallengeAmigoInvisible-ONE.git`
-2. Instalar dependencias con `npm install`
-3. Iniciar la aplicación con `node app.js`
-4. Abrir el navegador y acceder a `http://localhost:3000`
+1. Clonar el repositorio: `git clone https://github.com/MaxiFranco05/gamesExplorer.git`
+2. Instalar dependencias en el cliente: `cd client && npm install`
+3. Instalar dependencias en el servidor: `cd server && npm install`
+4. Iniciar el servidor: `cd server && npm start`
+5. Iniciar el cliente: `cd client && npm start`
+6. Abrir el navegador y acceder a `http://localhost:3000`
 
 ## 🧪 Cómo usar la app
-1. Registrar un nuevo usuario
-2. Iniciar sesión con el usuario registrado
-3. Establecer un presupuesto para los regalos
-4. Generar las parejas de amigos de manera aleatoria
-5. Verificar quién es tu "amigo invisible" y el presupuesto establecido
+1. Buscar juegos por título, género o plataforma
+2. Filtrar resultados por popularidad, fecha de lanzamiento o calificación
+3. Ver información detallada sobre un juego
+4. Agregar juegos a la lista de favoritos
+5. Acceder a la lista de favoritos y jugar
 
 ## ⚙️ Consideraciones técnicas
-* La aplicación utiliza autenticación y autorización para asegurar que solo los usuarios registrados puedan acceder a la funcionalidad de la aplicación.
-* La base de datos es almacenada en MongoDB, lo que permite una escalabilidad fácil y eficiente.
-* La aplicación utiliza HTTPS para asegurar la privacidad y seguridad de los datos de los usuarios.
+* **Seguridad**: La aplicación utiliza HTTPS para cifrar la comunicación entre el cliente y el servidor
+* **Almacenamiento**: La base de datos MongoDB almacena información de juegos y usuarios
+* **Rendimiento**: La aplicación utiliza técnicas de caching y optimización para mejorar el rendimiento
 
 ## 📈 Mejoras futuras o ideas en roadmap
-* Implementar un sistema de notificaciones para informar a los usuarios de cambios en la aplicación
-* Agregar la posibilidad de subir archivos para que los usuarios puedan compartir imágenes o archivos relacionados con los regalos
-* Mejorar la interfaz de usuario para hacerla más atractiva y fácil de usar
+* Agregar más plataformas de juego
+* Implementar autenticación de usuarios
+* Crear un sistema de recomendaciones de juegos
+* Mejorar la búsqueda y filtrado de juegos
 
 ## 👨‍💻 Autor o colaboradores
-Maxi Franco <maxifranco05@gmail.com>
+* **Maxi Franco**: Desarrollador y creador del proyecto
 
 ## 📄 Licencia
-Este proyecto está bajo la licencia MIT. Puedes ver el archivo LICENSE para más información.
+Este proyecto está licenciado bajo la licencia **MIT**. Ver [LICENSE](LICENSE) para más información.
