@@ -1,67 +1,71 @@
-# 🎮 GamesExplorer
+# 🎉 Challenge Amigo Invisible
+📌 Breve descripción del proyecto: Este proyecto es una aplicación para jugar al amigo invisible de forma online. Sirve para generar parejas de amigos de manera aleatoria y asegurar que cada persona reciba un regalo sin saber quién es su "amigo invisible".
 
-GamesExplorer es un paquete en Python diseñado para explorar y gestionar información sobre juegos en diferentes plataformas. Actualmente, se enfoca en la integración con Steam, proporcionando herramientas para interactuar con datos de juegos.
+## ✨ Funcionalidades destacadas
+* Generación de parejas de amigos de manera aleatoria
+* Asignación de un "amigo invisible" a cada persona
+* Posibilidad de establecer un presupuesto para los regalos
+* Notificación a cada persona de su "amigo invisible" y del presupuesto establecido
 
-## 📌 Características
-- 📦 Módulos organizados para la gestión de juegos y plataformas.
-- 🚀 Soporte para la API de Steam.
-- ✅ Sistema de utilidades para facilitar la manipulación de datos.
-- 🧪 Pruebas unitarias incluidas en la carpeta `tests/`.
+## 🛠️ Tecnologías utilizadas
+### Frontend
+* HTML
+* CSS
+* JavaScript
+### Backend
+* Node.js
+* Express.js
+* MongoDB
+### Herramientas
+* GitHub para el control de versiones
+* Heroku para el despliegue
 
-## 📂 Estructura del Proyecto
-```
-proyecto1/
+## 📁 Estructura del proyecto
+```markdown
+ChallengeAmigoInvisible-ONE/
 │
-├── gamesExplorer/        # Paquete principal
-│   ├── plataformas/      # Módulo para diferentes plataformas
-│   │   ├── steam/        # Implementación para Steam
-│   │   │   ├── __init__.py
-│   │   │   ├── steam.py
-│   │   │   ├── utils.py
-│   ├── __init__.py
-│   ├── manager.py        # Gestión general de juegos
-│
-├── tests/                # Pruebas unitarias
-│   ├── steam_test.py
-│
-├── setup.py              # Configuración para empaquetado
-└── README.md             # Documentación del proyecto
+├── app.js
+├── controllers/
+│   ├── usuarioController.js
+│   └── amigoInvisibleController.js
+├── models/
+│   ├── usuario.js
+│   └── amigoInvisible.js
+├── public/
+│   ├── index.html
+│   └── estilo.css
+├── routes/
+│   ├── usuarioRoutes.js
+│   └── amigoInvisibleRoutes.js
+├── package.json
+└── README.md
 ```
 
-## 🚀 Instalación
-Puedes instalar este paquete de manera local ejecutando:
+## 🚀 Guía de instalación paso a paso
+1. Clonar el repositorio con `git clone https://github.com/MaxiFranco05/ChallengeAmigoInvisible-ONE.git`
+2. Instalar dependencias con `npm install`
+3. Iniciar la aplicación con `node app.js`
+4. Abrir el navegador y acceder a `http://localhost:3000`
 
-```sh
-pip install -e .
-```
+## 🧪 Cómo usar la app
+1. Registrar un nuevo usuario
+2. Iniciar sesión con el usuario registrado
+3. Establecer un presupuesto para los regalos
+4. Generar las parejas de amigos de manera aleatoria
+5. Verificar quién es tu "amigo invisible" y el presupuesto establecido
 
-Esto permitirá que puedas importarlo y probarlo sin necesidad de reinstalar tras cambios en el código.
+## ⚙️ Consideraciones técnicas
+* La aplicación utiliza autenticación y autorización para asegurar que solo los usuarios registrados puedan acceder a la funcionalidad de la aplicación.
+* La base de datos es almacenada en MongoDB, lo que permite una escalabilidad fácil y eficiente.
+* La aplicación utiliza HTTPS para asegurar la privacidad y seguridad de los datos de los usuarios.
 
-## 🔧 Uso
-Ejemplo de cómo importar y utilizar `GamesManager`:
+## 📈 Mejoras futuras o ideas en roadmap
+* Implementar un sistema de notificaciones para informar a los usuarios de cambios en la aplicación
+* Agregar la posibilidad de subir archivos para que los usuarios puedan compartir imágenes o archivos relacionados con los regalos
+* Mejorar la interfaz de usuario para hacerla más atractiva y fácil de usar
 
-```python
-from gamesExplorer.manager import GamesManager
+## 👨‍💻 Autor o colaboradores
+Maxi Franco <maxifranco05@gmail.com>
 
-manager = GamesManager()
-manager.list_games()
-```
-
-## 🛠 Desarrollo
-Si deseas contribuir o modificar el código, sigue estos pasos:
-
-```sh
-git clone https://github.com/MaxiFranco05/gamesExplorer.git
-cd gamesExplorer
-pip install -r requirements.txt
-```
-
-Ejecuta las pruebas con:
-
-```sh
-pytest tests/
-```
-
-## 📜 Licencia
-Este proyecto se distribuye bajo la licencia MIT. ¡Siéntete libre de contribuir! 🎉
-
+## 📄 Licencia
+Este proyecto está bajo la licencia MIT. Puedes ver el archivo LICENSE para más información.
