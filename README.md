@@ -1,79 +1,62 @@
-# 🎮 Games Explorer
-📌 Breve descripción del proyecto: Games Explorer es una aplicación web diseñada para explorar y descubrir nuevos juegos de diferentes plataformas. Permite a los usuarios buscar, filtrar y obtener información detallada sobre juegos, incluyendo descripciones, imagenes, y enlaces a tiendas en línea.
+# gamesExplorer
+Una aplicación web para explorar y descubrir nuevos juegos 🎮
 
-## ✨ Funcionalidades destacadas
-* Búsqueda de juegos por título, género o plataforma
-* Filtrado de resultados por popularidad, fecha de lanzamiento o calificación
-* Información detallada sobre cada juego, incluyendo:
- + Descripciones y sinopsis
- + Imágenes y trailers
- + Enlaces a tiendas en línea para comprar o descargar el juego
-* Posibilidad de agregar juegos a una lista de favoritos para acceder rápidamente
+## Descripción
+gamesExplorer es una plataforma que permite a los usuarios buscar y explorar diferentes juegos, leyendo reseñas y viendo trailers de los mismos. Esta aplicación utiliza PHP, SQL y JavaScript para traer la información desde una base de datos MySQL y mostrarla de manera interactiva en la interfaz web.
 
-## 🛠️ Tecnologías utilizadas
-### Frontend
-* **HTML5**: Estructura y contenido de la página web
-* **CSS3**: Estilos y diseño visual
-* **JavaScript**: Funcionalidad interactiva y lógica de la aplicación
-* **React**: Biblioteca para construir interfaces de usuario
-### Backend
-* **Node.js**: Entorno de ejecución para JavaScript en el servidor
-* **Express**: Framework para crear aplicaciones web
-* **MongoDB**: Base de datos NoSQL para almacenar información de juegos
-### Herramientas
-* **GitHub**: Control de versiones y colaboración
-* **npm**: Gestor de paquetes para Node.js
+## Funcionalidades
+*   Buscar juegos por nombre o categoría 🎲
+*   Ver reseñas y puntuaciones de cada juego 🤔
+*   Ver trailers de los juegos en YouTube 📹
+*   Registrarse y loguearse como usuario para personalizar la experiencia 📝
 
-## 📁 Estructura del proyecto
+## Tecnologías
+*   **PHP**: Utilizado para crear la lógica del lado del servidor y manejar peticiones a la base de datos.
+*   **MySQL**: Base de datos relacional utilizada para almacenar información sobre los juegos.
+*   **JavaScript**: Utilizado para agregar interactividad en la interfaz web.
+*   **CSS**: Utilizado para dar estilo y diseña la interfaz web.
+*   **HTML**: Utilizado para crear la estructura de la interfaz web.
+
+## Estructura
+La estructura del proyecto es la siguiente:
 ```markdown
-gamesExplorer/
-├── client/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── containers/
-│   │   ├── actions/
-│   │   ├── reducers/
-│   │   ├── index.js
-│   ├── package.json
-├── server/
-│   ├── app.js
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── package.json
-├── README.md
-├── LICENSE
+- gamesExplorer/
+  - Css/
+    - Estilos.css
+  - Php/
+    - conexion.php
+    - mostrarJuegos.php
+  - Js/
+    - script.js
+  - Index.html
+  - Loguin.html
+  - Register.html
+  - buscador.php
+  - README.md
 ```
+## Instalación
+1.  Clonar el repositorio utilizando `git clone`.
+2.  Importar la base de datos MySQL desde el archivo `.sql` proporcionado.
+3.  Configurar la conexión a la base de datos en `conexion.php`.
+4.  Iniciar el servidor web utilizando `php -S localhost:8080` o cualquier otro método deseado.
 
-## 🚀 Guía de instalación paso a paso
-1. Clonar el repositorio: `git clone https://github.com/MaxiFranco05/gamesExplorer.git`
-2. Instalar dependencias en el cliente: `cd client && npm install`
-3. Instalar dependencias en el servidor: `cd server && npm install`
-4. Iniciar el servidor: `cd server && npm start`
-5. Iniciar el cliente: `cd client && npm start`
-6. Abrir el navegador y acceder a `http://localhost:3000`
+## Uso
+1.  Abrir el navegador y navegar a `http://localhost:8080` (o la URL configurada).
+2.  Buscar juegos por nombre o categoría utilizando el formulario de búsqueda.
+3.  Ver reseñas y puntuaciones de cada juego haciendo clic en el juego deseado.
+4.  Registrarse y loguearse como usuario para personalizar la experiencia.
 
-## 🧪 Cómo usar la app
-1. Buscar juegos por título, género o plataforma
-2. Filtrar resultados por popularidad, fecha de lanzamiento o calificación
-3. Ver información detallada sobre un juego
-4. Agregar juegos a la lista de favoritos
-5. Acceder a la lista de favoritos y jugar
+## Consideraciones técnicas
+*   La seguridad de la aplicación depende de la implementación adecuada de medidas de seguridad en la base de datos y en la lógica del lado del servidor.
+*   La optimización del rendimiento es importante para asegurar una experiencia fluida para los usuarios.
 
-## ⚙️ Consideraciones técnicas
-* **Seguridad**: La aplicación utiliza HTTPS para cifrar la comunicación entre el cliente y el servidor
-* **Almacenamiento**: La base de datos MongoDB almacena información de juegos y usuarios
-* **Rendimiento**: La aplicación utiliza técnicas de caching y optimización para mejorar el rendimiento
+## Mejoras futuras
+*   Agregar más características para personalizar la experiencia del usuario, como la capacidad de crear listas de juegos favoritos.
+*   Mejorar la interfaz web para que sea más atractiva y fácil de usar.
+*   Agregar más juegos a la base de datos para que los usuarios tengan más opciones.
 
-## 📈 Mejoras futuras o ideas en roadmap
-* Agregar más plataformas de juego
-* Implementar autenticación de usuarios
-* Crear un sistema de recomendaciones de juegos
-* Mejorar la búsqueda y filtrado de juegos
+## Autor
+Maxi Franco
 
-## 👨‍💻 Autor o colaboradores
-* **Maxi Franco**: Desarrollador y creador del proyecto
-
-## 📄 Licencia
-Este proyecto está licenciado bajo la licencia **MIT**. Ver [LICENSE](LICENSE) para más información.
+## Licencia
+Este proyecto está bajo la licencia MIT. Se puede utilizar, modificar y distribuir libremente. 📄
