@@ -12,7 +12,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'requests==2.32.3',
-        'lxml==5.3.1'
+        'lxml==6.1.0'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
